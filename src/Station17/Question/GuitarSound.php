@@ -16,7 +16,7 @@ class GuitarSound implements SoundInterface
         return $this->effect($scale);
     }
 
-    public function effect(string $scale): string
+    private function effect(string $scale): string
     {
         return 'エフェクトをかけた' . self::INSTRUMENT_NAME . 'の' . $scale;
     }

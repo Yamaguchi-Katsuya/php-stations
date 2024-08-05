@@ -9,7 +9,8 @@ class Question
         $human = new Human($humanName);
         $car = new Car($carName);
 
-        echo $car->run();
-        echo $human->buyCar($car);
+        $human->buyCar($car);
+        $car->run();
+        print $car->pickup($passengers);
     }
 }

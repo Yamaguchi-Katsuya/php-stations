@@ -11,8 +11,8 @@ class Human
         $this->name = $name;
     }
 
-    public function buyCar(Car $car): string
+    public function buyCar(Car $car): void
     {
-        return $this->name . 'は' . $car->name . 'を購入しました';
+        print $this->name . 'は' . $car->name . 'を購入しました';
     }
 }

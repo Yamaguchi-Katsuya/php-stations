@@ -2,7 +2,7 @@
 
 namespace Src\Station15\Question;
 
-class Caluculator
+class Calculator
 {
     public function multiply(array $multiplieds, int $multiplier): array|false
     {

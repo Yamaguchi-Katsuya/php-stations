@@ -13,9 +13,9 @@ class Car
         $this->name = $name;
     }
 
-    public function run(): string
+    public function run(): void
     {
-        return '走行する';
+        print '走行する';
     }
 
     public function pickup(int $passenger): int
