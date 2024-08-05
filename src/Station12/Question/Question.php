@@ -8,5 +8,7 @@ class Question
 {
     public function main(int $originalPrice, CarbonImmutable $useByDate): int
     {
+        $food = new Food($originalPrice, $useByDate);
+        return $food->price();
     }
 }
